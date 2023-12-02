@@ -1,0 +1,226 @@
+.hide, .validator_exp, .error_popup {
+    display: none;
+}
+.error_popup {
+    color: red;
+}
+
+.duplicate_email{
+    color: red;
+}
+
+.apply-form .inner__sidebar p::after{
+    content: '\2039';
+    position: absolute;
+    right: 7px;
+    top: calc(50% - 5px);
+    bottom: 0;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-size: 24px;
+    color: #adbcc9;
+    width: 10px;
+    display: block;
+    height: 10px;
+}
+
+@media (max-width: 1023px){
+    .apply-form .inner__sidebar p::after {
+        right: 10px;
+    }
+}
+
+
+.disabled_submit{
+    pointer-events: none;
+    cursor: default;
+}
+.inquiry_input.error_input, .inquiry_area.error_input {
+    border: 1px solid red !important;
+}
+section.error_popup {
+    width: 310px;
+}
+.message_inp section.error_popup {
+    width: 100%;
+}
+@media (max-width:767px) {
+    section.error_popup {
+        width: 100%;
+    }
+}
+
+.info_img_mob{
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .inner-section .content_center.no_form {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .info_img{
+        display: block;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .info_img_mob{
+        display: block;
+        width: 100%;
+    }
+    .info_img{
+        display: none;
+    }
+}
+
+.inner-section .content_center.no_form {
+    min-width: 960px;
+}
+
+.inner-section .content_center.no_form .list_block_main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-section .content_center.no_form .list_block_main.first_list li {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+/*success verification block on register form*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap');
+
+.success_verification-wrap {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(44, 46, 50, 0.08);
+    border-radius: 4px;
+    max-width: 660px;
+    margin: 40px auto 60px;
+    text-align: center;
+    padding: 40px 20px 48px;
+    color: #353839;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+}
+
+.success_verification-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    font-family: Barlow;
+    padding: 32px 0 20px;
+}
+
+.success_verification-body {
+    max-width: 502px;
+    margin: 0px auto 32px;
+    line-height: 22px;
+}
+
+.apply-form-verification{
+    background: #EDEFF0 !important;
+}
+
+.edit-help-text {
+    font-size: 12px;
+    font-weight: normal;
+}
+.edit-help-text strong{
+    text-decoration: underline;
+}
+
+.success_verification-mail{
+    padding: 10px 0;
+}
+
+.resend-email-hint{
+    font-weight: 500;
+    padding-bottom: 16px;
+}
+
+.success_verification-img{
+    width: 80px;
+}
+
+.dark-bg-btn {
+    background: #64B564;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: unset;
+    border: none;
+    padding: 15px 38px;
+    white-space: nowrap;
+}
+
+.dark-bg-btn:hover:not(.dark-bg-disabled) {
+    background: #509050;
+}
+
+.btn-resend-email:hover:not(.btn-resend-disabled) {
+    background: #509050;
+}
+
+.dark-bg-disabled{
+    background: #D9DEE1;
+    color: #868C90;
+    pointer-events: none;
+}
+.btn-resend-timing{
+    padding-left: 5px;
+}
+
+.resend-help-text {
+    line-height: 140%;
+    text-align: center;
+    color: #868C90;
+    padding-top: 32px;
+}
+
+.resend-help-text a{
+    color: #868C90;
+}
+
+.edit-help-text {
+    font-size: 12px;
+    color: #868C90;
+    margin-top: 14px;
+}
+
+.apply-form-verify {
+    background: #EDEFF0 !important;
+}
+
+.apply-form-verify .inner-section .banner_bg_in,
+.apply-form-verify .apply-form,
+.apply-form-verify footer{
+    display: none !important;
+}
+
+.apply-form-verify header {
+    top: 0;    
+}
+
+.dark-bg-btn [data-time-block-verify]{
+    padding-left: 5px;
+}
+
+@media (max-width: 767px){
+    .success_verification-img{
+        width: 50px;
+    }
+    .success_verification-wrap {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+/*END uccess verification block on register form*/
